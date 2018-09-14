@@ -6,3 +6,23 @@ $(window).on("scroll", function(){
         $('header').removeClass('white');
     }
 })
+
+$('.owl-carousel').owlCarousel({
+    loop:true,
+    margin:10,
+    autoplay:true,
+    autoplayTimeout:1500,
+    autoplayHoverPause:true,
+    nav:false,
+    responsive:{
+        0:{
+            items:1
+        },
+        450:{
+            item:2
+        },
+        1000:{
+            items:5
+        }
+    }
+})
