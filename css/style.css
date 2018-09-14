@@ -16,6 +16,7 @@
 :root {
     --nav-background: rgba(255,255,255,0.7);
     --red: #b11016;
+    --red-transparent: rgb(177, 16, 22, 0.9);
 }
 
 body {
@@ -34,9 +35,10 @@ body {
     margin: 0 auto;
     margin-bottom: 20px;
     text-align: center;
-    font-size: 2em;
+    font-size: 2.2em;
     color: var(--red);
-/*    background-color: rgba(0,0,0,0.5);*/
+    padding: 15px 0;
+    background-color: rgba(255,255,255,0.6);
 }
 
 p {
@@ -91,22 +93,42 @@ p {
     margin-top: 20px;
     margin-bottom: 30px;
 }
-.btn {
+.btn-primary {
+    display: inline-block;
+    font-family: Agency;
+    font-size: 28px;
+    text-decoration: none;
+    color: #fff;
+    background-color: var(--red-transparent);
+    padding: 22px 30px 22px;
+    border: none;
+    text-align: center;
+    border-radius: 4px;
+    box-shadow: 0px 6px 18px #888888;
+    transition: .5s;
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+    background-color: #000;
+}
+
+.btn-secondary {
     display: inline-block;
     font-family: Agency;
     font-size: 20px;
     text-decoration: none;
     color: #fff;
     background-color: var(--red);
-    padding: 10px 15px;
+    padding: 15px 30px 15px;
     border: none;
     text-align: center;
     border-radius: 4px;
     transition: .4s;
 }
 
-.btn:hover,
-.btn:focus {
+.btn-secondary:hover,
+.btn-secondary:focus {
     background-color: #000;
 }
 
@@ -257,7 +279,8 @@ nav a:hover {
     background-image: url(../images/bg-blank.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: top right;
+    background-position: top;
+    background-attachment: fixed;
     text-align: center;
 }
 
@@ -294,7 +317,13 @@ nav a:hover {
  Sponsors
 ----------------------------------------------------*/
 .sponsors {
-    margin: 0 10px;
+    padding-top: 40px;
+    background-image: url(../images/bg-blank.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+    background-attachment: fixed;
+    text-align: center;
 }
 
 /*---------------------------------------------------
