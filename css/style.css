@@ -300,28 +300,29 @@ nav>ul>li>a.active-page {
 }
 
 .overlay-yellow {
-    background-color: rgb(255, 186, 1, 0.6);
+    background-color: rgb(255, 186, 1, 0.8);
 }
 
 .overlay-text {
     display: flex;
-    justify-content: flex-end;
-    align-items: center;
+    justify-content: space-between;
     padding: 10px;
 }
 
-.overlay-text h2, h3 {
+.overlay-text h3 {
+    color: #fff;
     margin: 0;
+    font-size: 18px;
 }
 
 .overlay-cta {
-    text-align: right;
+    align-items: center;
 }
 
 .overlay-cta a {
     text-decoration: underline;
     color: #fff;
-    font-size: 20px;
+    font-size: 16px;
     text-transform: uppercase;
     
 }
@@ -425,6 +426,228 @@ nav>ul>li>a.active-page {
     margin: 0 auto;
 }
 
+/*---------------------------------------------------
+ Races Page - Banner
+----------------------------------------------------*/
+
+.races-masthead {
+    height: 85vh;
+    background: url(../images/hero.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top right;
+    
+}
+
+.races-masthead h1 {
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 800;
+    margin-left: 10px;
+    color: var(--red);
+    font-size: 32px;
+    letter-spacing: -3px;
+    line-height: 30px;
+    position: absolute;
+    top: 40%;
+    z-index: 1;
+}
+
+.races-masthead h1 span {
+    color: #000;
+}
+
+/*---------------------------------------------------
+ RESULTS Page - Banner
+----------------------------------------------------*/
+
+.results-masthead {
+    height: 85vh;
+    background: url(../images/hero.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top right;
+    
+}
+
+.results-masthead h1 {
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 800;
+    margin-left: 10px;
+    color: var(--red);
+    font-size: 32px;
+    letter-spacing: -3px;
+    line-height: 30px;
+    position: absolute;
+    top: 40%;
+    z-index: 1;
+}
+
+.results-masthead h1 span {
+    color: #000;
+}
+
+/*---------------------------------------------------
+ Gallery Page - Banner
+----------------------------------------------------*/
+
+.gallery-masthead {
+    height: 85vh;
+    background: url(../images/hero.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top right;
+    
+}
+
+.gallery-masthead h1 {
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 800;
+    margin-left: 10px;
+    color: var(--red);
+    font-size: 32px;
+    letter-spacing: -3px;
+    line-height: 30px;
+    position: absolute;
+    top: 40%;
+    z-index: 1;
+}
+
+.gallery-masthead h1 span {
+    color: #000;
+}
+
+
+/*---------------------------------------------------
+ Gallery Page - gallery section
+----------------------------------------------------*/
+
+.gallery {
+    padding-top: 40px;
+    padding-bottom: 30px;
+    background-image: url(../images/bg-blank.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+    background-attachment: fixed;
+    text-align: center;
+}
+
+.thumbnail-image {
+    width: 100%;
+    height: auto;
+    max-width: 400px;
+    display: inline-block;
+    margin: 10px 0;
+/*    text-align: center;*/
+}
+
+.thumbnail {
+    position: relative;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+/*---------------------------------------------------
+ Contact Us Page - Banner
+----------------------------------------------------*/
+
+.contact-masthead {
+    height: 85vh;
+    background: url(../images/hero.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top right;
+}
+
+.contact-masthead h1 {
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 800;
+    margin-left: 10px;
+    color: var(--red);
+    font-size: 32px;
+    letter-spacing: -3px;
+    line-height: 30px;
+    position: absolute;
+    top: 40%;
+    z-index: 1;
+}
+
+.contact-container {
+    padding-top: 40px;
+    padding-bottom: 30px;
+    background-image: url(../images/bg-blank.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+    background-attachment: fixed;
+    text-align: center;
+}
+
+.contact-masthead h1 span {
+    color: #000;
+}
+
+.contact-wrapper {
+    background: rgba(255,255,255,0.8);
+}
+
+.contact-info {
+    text-align: left;
+    margin: 0 auto;
+}
+
+
+.contact-info h2 {
+    margin: 5px 10px;
+    color: var(--red);
+}
+
+.contact-details {
+    list-style: none;
+    margin-top: 30px;
+}
+
+.contact-details h4 {
+    display: inline-block;
+    margin: 0;
+}
+
+.contact-group {
+    display: flex;
+    
+}
+
+.contact-icon {
+    display: inline-block;
+    margin-right: 15px;
+    margin-bottom: 10px;
+    font-size: 20px;
+    
+}
+
+.phone {
+    transform: rotate(90deg)
+}
+
+.contact-text {
+    display: inline-block;
+    font-size: 18px;
+}
+
+.location {
+    position: relative;
+    overflow: hidden;
+}
+
+.location-iframe {
+    width: 100%;
+    height: 300px;
+    max-width: 400px;
+        
+}
+
+
+
 
 
 
@@ -441,6 +664,11 @@ footer {
     display: inline-block;
     margin: 0 10px;
     color: #fff;
+}
+
+.social-icons:hover {
+    color: var(--red);
+    cursor: pointer;
 }
 
 .footer-logo {
@@ -492,10 +720,18 @@ footer {
             margin: 10px 0; 
         }
         
+        .overlay-text h3 {
+            font-size: 20px;
+        }
+        
+        .overlay-cta a {
+            font-size: 18px;
+        }
+        
         
         
         /*-------------------------------
-        HEADER
+        ABOUT PAGE HEADER
         -------------------------------*/
         .about-masthead h1 {
             font-size: 52px;
@@ -525,6 +761,14 @@ footer {
             margin: 10px 0; 
         }
         
+         /*-------------------------------
+        RACES PAGE HEADER
+        -------------------------------*/
+        .races-masthead h1 {
+            font-size: 52px;
+            line-height: 45px;
+        }
+        
         /*-----------------------------
         RACES PAGE
         ------------------------------*/
@@ -536,6 +780,47 @@ footer {
             margin: 0 10px;
             
         }
+        
+        /*-------------------------------
+        RESULTS PAGE HEADER
+        -------------------------------*/
+        .results-masthead h1 {
+            font-size: 52px;
+            line-height: 45px;
+        }
+        
+        /*-------------------------------
+        GALLERY PAGE HEADER
+        -------------------------------*/
+        .gallery-masthead h1 {
+            font-size: 52px;
+            line-height: 45px;
+        }
+        
+        .gallery-cards {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-gap: 15px;
+            margin: 0 10px;
+            
+        }
+        
+        /*-------------------------------
+        CONTACT PAGE HEADER
+        -------------------------------*/
+        .contact-masthead h1 {
+            font-size: 52px;
+            line-height: 45px;
+        }
+        
+        .contact-wrapper {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-gap: 15px;
+            margin: 0 10px;
+            
+        }
+        
     }
 
     @media screen and (min-width: 991px) {
@@ -630,6 +915,7 @@ footer {
             margin: 3px 0;
         }
         
+            
                 
         /*-------------------------------
         ABOUT SECTION
@@ -671,6 +957,11 @@ footer {
         RACES PAGE
         ------------------------------*/
         
+        .about-masthead h1 {
+            font-size: 60px;
+            line-height: 55px;
+        }
+        
         .all-races {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
@@ -678,6 +969,34 @@ footer {
             margin: 0 10px;
             
         }
+        
+        /*-------------------------------
+        RESULTS PAGE
+        -------------------------------*/
+        .results-masthead h1 {
+            font-size: 60px;
+            line-height: 55px;
+        }
+        
+        /*-------------------------------
+        GALLERY PAGE
+        -------------------------------*/
+        .gallery-masthead h1 {
+            font-size: 60px;
+            line-height: 55px;
+        }
+        
+        .gallery-cards {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-gap: 15px;
+            margin: 0 10px;
+        }
+        
+        .thumbnail-image {
+            margin: 0;
+        }
+        
                 
         /*-------------------------------
         FOOTER
@@ -703,5 +1022,15 @@ footer {
             margin-top: 12px;
         }
         
+    }
+    
+    @media screen and (min-width: 1200px) {
+        
+        .races, .all-races, .gallery-cards {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-gap: 15px;
+            margin: 0 10px;
+        }
     }
 }
