@@ -761,6 +761,7 @@ footer {
 .card-wrapper h3 {
     margin-bottom: 5px;
     color: var(--red);
+    letter-spacing: 1px;
 }
 
 .brief-card {
