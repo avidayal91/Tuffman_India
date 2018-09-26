@@ -1,3 +1,4 @@
+
 /*-----------------------------------
  Font styles                       
 -----------------------------------*/
@@ -50,8 +51,9 @@ p {
 .cta-button {
     text-align: center;
     margin-top: 20px;
-    margin-bottom: 30px;
+    padding-bottom: 30px;
 }
+
 .btn-primary {
     display: inline-block;
     font-family: Agency;
@@ -62,7 +64,7 @@ p {
     padding: 22px 30px 22px;
     border: none;
     text-align: center;
-    box-shadow: 0px 6px 18px #888888;
+    box-shadow: 0 5px 25px 0px rgba(0,0,0,0.5);
     transition: .5s;
 }
 
@@ -222,7 +224,9 @@ nav>ul>li>a.active-page {
     font-family: 'Work Sans', sans-serif;
     font-weight: 800;
     margin-left: 10px;
+/*    padding: 10px;*/
     color: var(--red);
+/*    background-color: rgba(255,255,255,0.5);*/
     font-size: 32px;
     letter-spacing: -2px;
     line-height: 30px;
@@ -349,6 +353,45 @@ nav>ul>li>a.active-page {
 .about-text {
     margin: 2em 1em;
     text-align: left;
+}
+
+/*---------------------------------------------------
+ PRO MEMBER
+----------------------------------------------------*/
+.pro-member {
+    padding-top: 40px;
+    background-image: url(../images/pro-member.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: right;
+    text-align: center;
+}
+
+.card-wrapper {
+    display: inline-block;
+    background-color: rgba(255,255,255,0.9);
+    box-shadow: 0 0px 15px 0px rgba(0,0,0,0.5);
+    padding: 15px;
+    margin: 20px 10px;
+}
+
+.card-wrapper ul {
+    margin: 10px;
+    padding: 10px;
+    list-style-image: url(../images/arrow-right.png);
+    text-align: left;
+    font-family: 'Roboto Condensed';
+    line-height: 1.2em;
+    font-size: 1em;
+}
+
+.card-wrapper li {
+    margin: 10px 0;
+}
+
+.card-wrapper i {
+    color: var(--red);
+    margin-right: 5px;
 }
 
 
@@ -552,7 +595,7 @@ nav>ul>li>a.active-page {
 ----------------------------------------------------*/
 
 .contact-masthead {
-    height: 85vh;
+    height: 70vh;
     background: url(../images/hero.jpg);
     background-size: cover;
     background-repeat: no-repeat;
@@ -594,6 +637,8 @@ nav>ul>li>a.active-page {
 .contact-info {
     text-align: left;
     margin: 0 auto;
+    font-family: 'Roboto Condensed';
+    
 }
 
 
@@ -622,6 +667,7 @@ nav>ul>li>a.active-page {
     margin-right: 15px;
     margin-bottom: 10px;
     font-size: 20px;
+    color: var(--red);
     
 }
 
@@ -645,9 +691,6 @@ nav>ul>li>a.active-page {
     max-width: 400px;
         
 }
-
-
-
 
 
 
@@ -681,6 +724,97 @@ footer {
     width: 200px;
     height: auto;
 }
+
+
+/*---------------------------------------------------
+ INDIVIDUAL RACES: GLOBAL
+----------------------------------------------------*/
+
+.race-masthead h1 {
+    font-family: 'Agency';
+    margin-left: 10px;
+    color: #000;
+    font-size: 40px;
+    line-height: 40px;
+    position: absolute;
+    top: 40%;
+    z-index: 1;
+}
+
+.race-brief-container {
+    padding-top: 40px;
+    padding-bottom: 30px;
+    background-image: url(../images/bg-blank.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+    background-attachment: fixed;
+    text-align: center;
+}
+
+.card-wrapper p {
+    text-align: justify;
+    margin: 0;
+    line-height: 1.3em;
+}
+
+.card-wrapper h3 {
+    margin-bottom: 5px;
+    color: var(--red);
+}
+
+.brief-card {
+    width: 80%;
+    max-width: 350px;
+}
+
+.brief-card ul {
+    list-style: none;
+}
+
+.brief-details h4 {
+    display: inline-block;
+    margin: 0;
+}
+
+.brief-group {
+    display: flex;
+}
+
+.brief-icon {
+    display: inline-block;
+    margin-right: 15px;
+    margin-bottom: 10px;
+    font-size: 1.2em;
+    color: var(--red);
+    
+}
+
+.brief-text {
+    display: inline-block;
+    font-size: 1em;
+}
+
+.icon-flip {
+    transform: scaleX(-1);
+}
+
+
+/*---------------------------------------------------
+ INDIVIDUAL RACES: TRICITY TRIATHLON
+----------------------------------------------------*/
+
+.tricity {
+    height: 85vh;
+    background: url(../images/hero.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top right;
+}
+
+
+
+
 
 
 @supports (grid-area: auto) { 
@@ -820,6 +954,59 @@ footer {
             margin: 0 10px;
             
         }
+        
+        /*---------------------------------------------------
+         INDIVIDUAL RACES: GLOBAL
+        ----------------------------------------------------*/
+        .race-intro {
+            max-width: 600px;
+            margin: 10px auto;
+        }
+        
+        .race-facilities {
+            max-width: 600px;
+            margin: 10px auto;
+        }
+        
+        .race-cards-grid {
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+        }
+        
+        .brief-card {
+            margin: 10px auto;
+        }
+        
+        /*---------------------------------------------------
+         INDIVIDUAL RACES: TRICITY TRIATHLON
+        ----------------------------------------------------*/
+        .race-intro {
+            grid-column: 1/3;
+            
+        }
+        .triathlon-card {
+            grid-row: 2/3;
+            grid-column: 1/2;
+        }
+        
+        .duathlon-card {
+            grid-row: 2/3;
+            grid-column: 2/3;
+        }
+        
+        .event {
+            grid-row: 3/4;
+            grid-column: 1/2;
+        }
+        
+        .expo {
+            grid-row: 3/4;
+        }
+        
+        .race-facilities {
+            grid-column: 1/3;
+        }
+        
         
     }
 
@@ -1026,11 +1213,42 @@ footer {
     
     @media screen and (min-width: 1200px) {
         
-        .races, .all-races, .gallery-cards {
+        .races, .all-races, .gallery-cards, .race-cards-grid {
             display: grid;
             grid-template-columns: repeat(4, 1fr);
             grid-gap: 15px;
             margin: 0 10px;
+        }
+        
+        /*---------------------------------------------------
+         INDIVIDUAL RACES: TRICITY TRIATHLON
+        ----------------------------------------------------*/
+        .race-intro {
+            grid-row: 1/2;
+            grid-column: 1/3;
+            
+            
+        }
+        .triathlon-card {
+            grid-row: 1/2;
+            grid-column: 3/4;
+            
+        }
+        
+        .duathlon-card {
+            grid-row: 1/2;
+            grid-column: 4/5;
+            
+        }
+        
+        .event {
+            grid-row: 2/3;
+            grid-column: 3/4;
+        }
+        
+        .expo {
+            grid-row: 2/3;
+            grid-column: 4/5;
         }
     }
 }
