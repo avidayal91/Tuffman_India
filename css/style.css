@@ -620,13 +620,13 @@ nav>ul>li>a.active-page {
     width: 0;
     height: 100%;
     transform: skew(-45deg);
-    transition: .5s ease;
+    transition: ease-in-out 500ms;
 }
 
 
 
 .thumbnail:hover .thumbnail-overlay {
-  width: 100%;
+    width: 100%;
 }
 
 .thumbnail-text {
