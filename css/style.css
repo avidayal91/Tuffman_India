@@ -481,16 +481,41 @@ nav>ul>li>a.active-page {
     height: auto;
     max-width: 400px;
     display: inline-block;
-    margin: 10px 0;
+    margin: 0;
+    
+}
+
+.team-head {
+    position: relative;
+    max-width: 800px;
+    margin: 0 auto;
     
 }
 
 .team-card {
     position: relative;
     max-width: 400px;
-    margin: 0 auto;
+    margin: 10px auto;
 }
 
+.team-overlay {
+    position: absolute;
+    background-color: rgba(0,0,0,0.8);
+    margin: 3px 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    overflow: hidden;
+    width: 100%;
+    height: 15%;
+}
+
+.team-overlay-text h3 {
+    color: #fff;
+    margin: 10px 5px 0px 5px;
+    font-size: 1.5em;
+    text-align: left;
+}
 /*---------------------------------------------------
  Races Page - Banner
 ----------------------------------------------------*/
@@ -959,10 +984,14 @@ footer {
             margin: 0;
         }
         
+        .team-head {
+            grid-column: 1/3;
+        }
+        
         .team-member-image {
             max-width: none;
             width: 100%; 
-            margin: 10px 0; 
+            margin: 0; 
         }
         
          /*-------------------------------
@@ -1200,9 +1229,12 @@ footer {
             margin: 0 10px;
         }
         
+        .team-head {
+            grid-column: 1/5;
+        }
         .team-card {
-            margin:0;
-/*            max-width: none;*/
+            margin: 0 auto;
+            
         }
         
         .team-image {
