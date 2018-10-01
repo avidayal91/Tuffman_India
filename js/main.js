@@ -29,3 +29,5 @@ $('.owl-carousel').owlCarousel({
 
 // wow animation Js
     new WOW().init();
+
+// CSS loader animation
