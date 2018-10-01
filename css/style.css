@@ -114,6 +114,7 @@ header {
     position: fixed;
     z-index: 999;
     width: 100%;
+/*    background: var(--nav-background);*/
 }
 
 header.white {
@@ -564,7 +565,7 @@ nav>ul>li>a.active-page {
     background: url(../images/races-banner.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: top center;
     
 }
 
@@ -899,8 +900,8 @@ footer {
     line-height: 1em;
     letter-spacing: 1px;
     position: absolute;
-    top: 40%;
-    
+    top: 5%;
+
 }
 
 .race-masthead h1 span {
@@ -975,8 +976,32 @@ footer {
 ----------------------------------------------------*/
 
 .tricity {
-    height: 90vh;
+    height: 100vh;
     background: url(../images/tuffman-tricity-banner.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.goa-banner {
+    height: 100vh;
+    background: url(../images/tuffman-goa-banner.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.kasauli-banner {
+    height: 100vh;
+    background: url(../images/tuffman-kasauli-banner.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.jaisalmer-banner {
+    height: 100vh;
+    background: url(../images/tuffman-jaisalmer-banner.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -1145,6 +1170,10 @@ footer {
             margin: 10px auto;
         }
         
+        .race-masthead h1 {
+            font-size: 4em;
+            line-height: 0.9;
+        }
         /*---------------------------------------------------
          INDIVIDUAL RACES: TRICITY TRIATHLON
         ----------------------------------------------------*/
@@ -1399,6 +1428,10 @@ footer {
             grid-template-columns: repeat(4, 1fr);
             grid-gap: 15px;
             margin: 0 10px;
+        }
+        
+        .race-masthead h1 {
+            font-size: 6em;
         }
         
         /*---------------------------------------------------
