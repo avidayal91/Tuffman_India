@@ -661,6 +661,14 @@ nav>ul>li>a.active-page {
     text-align: center;
 }
 
+.gallery-cards h2 {
+    color: var(--red);
+    font-family: 'Roboto Condensed';
+    font-size: 1.3em;
+    margin-top: 10px;
+    margin-bottom: 0;
+}
+
 .thumbnail-image {
     width: 100%;
     height: auto;
