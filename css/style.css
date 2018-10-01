@@ -61,6 +61,7 @@ p {
     font-size: 28px;
     text-decoration: none;
     color: #fff;
+    background-color: var(--red); /*fall back for Internet Explorer*/
     background-color: var(--red-transparent);
     padding: 22px 30px 22px;
     border: none;
@@ -433,11 +434,11 @@ nav>ul>li>a.active-page {
 ----------------------------------------------------*/
 
 .about-masthead {
-    height: 85vh;
-    background: url(../images/hero.jpg);
+    height: 100vh;
+    background: url(../images/about-banner.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: top right;
+    background-position: center;
     
 }
 
@@ -445,12 +446,14 @@ nav>ul>li>a.active-page {
     font-family: 'Work Sans', sans-serif;
     font-weight: 800;
     margin-left: 10px;
+    padding: 5px;
+    background-color: rgba(255,255,255,0.7);
     color: var(--red);
-    font-size: 32px;
-    letter-spacing: -3px;
-    line-height: 30px;
+    font-size: 1.8em;
+    letter-spacing: -2px;
+    line-height: .8em;
     position: absolute;
-    top: 40%;
+    top: 55%;
     z-index: 1;
 }
 
@@ -619,6 +622,7 @@ nav>ul>li>a.active-page {
     overflow: hidden;
     width: 0;
     height: 100%;
+/*    mix-blend-mode: multiply;*/
     transform: skew(-45deg);
     transition: ease-in-out 500ms;
 }
