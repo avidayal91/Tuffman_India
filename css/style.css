@@ -351,7 +351,7 @@ nav>ul>li>a.active-page {
     color: #fff;
     font-size: 1em;
     font-family: 'Roboto Condensed';
-    text-transform: uppercase;
+    text-transform: capitalize;
     
 }
 
@@ -386,7 +386,6 @@ nav>ul>li>a.active-page {
 
 .about-text span {
     color: var(--red);
-    font-style: italic;
 }
 
 .about-text p:nth-of-type(3) {
@@ -663,7 +662,7 @@ nav>ul>li>a.active-page {
 
 .gallery-cards h2 {
     color: var(--red);
-    font-family: 'Roboto Condensed';
+    font-family: 'Agency';
     font-size: 1.3em;
     margin-top: 10px;
     margin-bottom: 0;
@@ -823,6 +822,16 @@ nav>ul>li>a.active-page {
 .contact-text {
     display: inline-block;
     font-size: 18px;
+}
+
+.contact-text a {
+    text-decoration: none;
+    color: #000;
+}
+
+.contact-icon a {
+    text-decoration: none;
+    color: var(--red);
 }
 
 .location {
