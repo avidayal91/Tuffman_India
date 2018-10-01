@@ -471,7 +471,7 @@ nav>ul>li>a.active-page {
     letter-spacing: -2px;
     line-height: .8em;
     position: absolute;
-    top: 55%;
+    bottom: 10%;
     z-index: 1;
 }
 
@@ -558,7 +558,7 @@ nav>ul>li>a.active-page {
     background: url(../images/races-banner.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: top right;
+    background-position: center;
     
 }
 
@@ -573,7 +573,7 @@ nav>ul>li>a.active-page {
     letter-spacing: -2px;
     line-height: .8em;
     position: absolute;
-    top: 55%;
+    bottom: 10%;
     z-index: 1;
 }
 
@@ -586,11 +586,11 @@ nav>ul>li>a.active-page {
 ----------------------------------------------------*/
 
 .results-masthead {
-    height: 85vh;
-    background: url(../images/hero.jpg);
+    height: 100vh;
+    background: url(../images/results-banner.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: top right;
+    background-position: center;
     
 }
 
@@ -598,12 +598,14 @@ nav>ul>li>a.active-page {
     font-family: 'Work Sans', sans-serif;
     font-weight: 800;
     margin-left: 10px;
+    padding: 5px;
+    background-color: rgba(255,255,255,0.7);
     color: var(--red);
-    font-size: 32px;
-    letter-spacing: -3px;
-    line-height: 30px;
+    font-size: 1.8em;
+    letter-spacing: -2px;
+    line-height: .8em;
     position: absolute;
-    top: 40%;
+    bottom: 10%;
     z-index: 1;
 }
 
@@ -616,7 +618,7 @@ nav>ul>li>a.active-page {
 ----------------------------------------------------*/
 
 .gallery-masthead {
-    height: 85vh;
+    height: 100vh;
     background: url(../images/hero.jpg);
     background-size: cover;
     background-repeat: no-repeat;
@@ -628,12 +630,14 @@ nav>ul>li>a.active-page {
     font-family: 'Work Sans', sans-serif;
     font-weight: 800;
     margin-left: 10px;
+    padding: 5px;
+    background-color: rgba(255,255,255,0.7);
     color: var(--red);
-    font-size: 32px;
-    letter-spacing: -3px;
-    line-height: 30px;
+    font-size: 1.8em;
+    letter-spacing: -2px;
+    line-height: .8em;
     position: absolute;
-    top: 40%;
+    bottom: 10%;
     z-index: 1;
 }
 
@@ -726,22 +730,24 @@ nav>ul>li>a.active-page {
 
 .contact-masthead {
     height: 70vh;
-    background: url(../images/hero.jpg);
+    background: url(../images/contact-banner.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: top right;
+    background-position: center;
 }
 
 .contact-masthead h1 {
     font-family: 'Work Sans', sans-serif;
     font-weight: 800;
     margin-left: 10px;
+    padding: 5px;
+    background-color: rgba(255,255,255,0.7);
     color: var(--red);
-    font-size: 32px;
-    letter-spacing: -3px;
-    line-height: 30px;
+    font-size: 1.8em;
+    letter-spacing: -2px;
+    line-height: .8em;
     position: absolute;
-    top: 40%;
+    bottom: 30%;
     z-index: 1;
 }
 
@@ -938,11 +944,11 @@ footer {
 ----------------------------------------------------*/
 
 .tricity {
-    height: 85vh;
-    background: url(../images/hero.jpg);
+    height: 90vh;
+    background: url(../images/tuffman-tricity-banner.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: top right;
+    background-position: center;
 }
 
 
@@ -1253,8 +1259,8 @@ footer {
         -------------------------------*/
         
         .about-masthead h1 {
-            font-size: 60px;
-            line-height: 55px;
+            font-size: 5em;
+            line-height: 0.8em;
             
         }
         
@@ -1281,9 +1287,9 @@ footer {
         RACES PAGE
         ------------------------------*/
         
-        .about-masthead h1 {
-            font-size: 60px;
-            line-height: 55px;
+        .races-masthead h1 {
+            font-size: 5em;
+            line-height: 0.8em;
         }
         
         .all-races {
@@ -1298,16 +1304,16 @@ footer {
         RESULTS PAGE
         -------------------------------*/
         .results-masthead h1 {
-            font-size: 60px;
-            line-height: 55px;
+            font-size: 5em;
+            line-height: 0.8em;
         }
         
         /*-------------------------------
         GALLERY PAGE
         -------------------------------*/
         .gallery-masthead h1 {
-            font-size: 60px;
-            line-height: 55px;
+            font-size: 5em;
+            line-height: 0.8em;
         }
         
         .gallery-cards {
@@ -1321,6 +1327,13 @@ footer {
             margin: 0;
         }
         
+        /*-------------------------------
+        CONTACT PAGE
+        -------------------------------*/
+        .contact-masthead h1 {
+            font-size: 5em;
+            line-height: 0.8em;
+        }
                 
         /*-------------------------------
         FOOTER
