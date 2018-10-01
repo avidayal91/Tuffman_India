@@ -320,9 +320,10 @@ nav>ul>li>a.active-page {
 }
 
 .overlay-text h3 {
+    font-family: 'Roboto Condensed';
     color: #fff;
     margin: 0;
-    font-size: 18px;
+    font-size: 1em;
 }
 
 .overlay-cta {
@@ -332,7 +333,8 @@ nav>ul>li>a.active-page {
 .overlay-cta a {
     text-decoration: underline;
     color: #fff;
-    font-size: 16px;
+    font-size: 1em;
+    font-family: 'Roboto Condensed';
     text-transform: uppercase;
     
 }
@@ -485,11 +487,25 @@ nav>ul>li>a.active-page {
     
 }
 
+.about-text {
+    text-align: justify;
+    font-size: 1em;
+    padding: 10px;
+    line-height: 1.2em;
+}
+
 .team-head {
     position: relative;
     max-width: 800px;
     margin: 0 auto;
-    
+    background-color: rgba(255,255,255,0.9);
+}
+
+.team-head p {
+    text-align: justify;
+    font-size: 1em;
+    padding: 10px;
+    line-height: 1.2em;
 }
 
 .team-card {
@@ -515,6 +531,7 @@ nav>ul>li>a.active-page {
     margin: 10px 5px 0px 5px;
     font-size: 1.5em;
     text-align: left;
+    letter-spacing: 1px;
 }
 /*---------------------------------------------------
  Races Page - Banner
@@ -950,11 +967,12 @@ footer {
         }
         
         .overlay-text h3 {
-            font-size: 20px;
+            font-size: 0.9em;
         }
         
         .overlay-cta a {
-            font-size: 18px;
+            font-size: 0.9em;
+            text-transform: capitalize;
         }
         
         
