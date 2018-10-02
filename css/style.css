@@ -114,10 +114,6 @@ header {
     position: fixed;
     z-index: 999;
     width: 100%;
-/*    background: #fff;*/
-}
-
-header.white {
     background: var(--nav-background);
 }
 
@@ -279,6 +275,9 @@ nav>ul>li>a.active-page {
     display: none;
 }
 
+.races, .all-races {
+    padding: 0 10px;
+}
 .race-image {
     width: 100%;
     height: auto;
@@ -292,7 +291,21 @@ nav>ul>li>a.active-page {
     position: relative;
     max-width: 400px;
     margin: 0 auto;
+    
 }
+
+.race-card:hover img{
+    box-shadow: 0 0 15px 2px rgba(0,0,0,0.5);
+    transform: scale(1.02);
+    transition: 0.2s;
+}
+
+.race-card:hover .overlay {
+    transform: scale(1.02);
+    transition: 0.2s;
+    
+}
+
 
 .overlay {
     position: absolute;
@@ -618,6 +631,17 @@ nav>ul>li>a.active-page {
 
 .results-masthead h1 span {
     color: #000;
+}
+
+.tuffman-results {
+    padding-top: 40px;
+    padding-bottom: 30px;
+    background-image: url(../images/bg-blank.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+    background-attachment: fixed;
+    text-align: center;
 }
 
 /*---------------------------------------------------
