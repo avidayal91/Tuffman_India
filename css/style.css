@@ -617,7 +617,7 @@ nav>ul>li>a.active-page {
     background: url(../images/results-banner.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: 20%;
+    background-position: 35%;
     
 }
 
@@ -660,7 +660,7 @@ nav>ul>li>a.active-page {
     background: url(../images/gallery-banner.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: 35%;
+    background-position: 20%;
     
 }
 
@@ -1426,6 +1426,8 @@ footer {
         .gallery-masthead h1 {
             font-size: 5em;
             line-height: 0.8em;
+/*            left: 40%;*/
+            bottom: 40%;
         }
         
         .gallery-cards {
