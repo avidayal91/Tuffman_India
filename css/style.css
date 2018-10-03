@@ -476,7 +476,7 @@ nav>ul>li>a.active-page {
     background: url(../images/about-banner.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: 22%;
     
 }
 
@@ -617,7 +617,7 @@ nav>ul>li>a.active-page {
     background: url(../images/results-banner.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: 80%;
     
 }
 
@@ -657,10 +657,10 @@ nav>ul>li>a.active-page {
 
 .gallery-masthead {
     height: 100vh;
-    background: url(../images/hero.jpg);
+    background: url(../images/gallery-banner.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: top right;
+    background-position: 35%;
     
 }
 
