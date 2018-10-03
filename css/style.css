@@ -918,6 +918,18 @@ footer {
     height: auto;
 }
 
+.copy-right {
+    font-family: 'Roboto Condensed';
+    color: #fff;
+    margin-top: 10px;
+}
+
+.copy-right h6 {
+    margin: 0;
+    font-size: 0.8em;
+    font-weight: 400;
+}
+
 
 /*---------------------------------------------------
  INDIVIDUAL RACES: GLOBAL
@@ -927,11 +939,11 @@ footer {
     font-family: 'Agency';
     margin-left: 10px;
     color: #fff;
-    font-size: 2.2em;
+    font-size: 2.5em;
     line-height: 1em;
     letter-spacing: 1px;
     position: absolute;
-    top: 5%;
+    bottom: 10%;
 
 }
 
@@ -1011,7 +1023,7 @@ footer {
     background: url(../images/tuffman-tricity-banner.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: right;
 }
 
 .goa-banner {
@@ -1019,7 +1031,7 @@ footer {
     background: url(../images/tuffman-goa-banner.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: right;
 }
 
 .kasauli-banner {
@@ -1027,7 +1039,7 @@ footer {
     background: url(../images/tuffman-kasauli-banner.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: right;
 }
 
 .jaisalmer-banner {
@@ -1035,7 +1047,7 @@ footer {
     background: url(../images/tuffman-jaisalmer-banner.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: right;
 }
 
 
@@ -1242,7 +1254,7 @@ footer {
         
         
     }
-
+    
     @media screen and (min-width: 991px) {
         
         /*-------------------------------
@@ -1253,11 +1265,14 @@ footer {
         }
 
         header {
+            display: -ms-grid;
             display: grid;
+            -ms-grid-columns: 1fr auto minmax(800px, 3fr) 1fr;
             grid-template-columns: 1fr auto minmax(800px, 3fr) 1fr;
         }
 
         .logo {
+            -ms-grid-column: 2/3;
             grid-column: 2/3;
         }
         
@@ -1267,6 +1282,7 @@ footer {
 
         nav {
             all:unset;
+            -ms-grid-column: 3/4;
             grid-column: 3/4;
             display: flex;
             justify-content: flex-end;
@@ -1453,6 +1469,12 @@ footer {
             margin-right: 20px;
             order: 2;
             margin-top: 12px;
+        }
+        
+        .copy-right {
+            grid-column: 1/3;
+            order: 3;
+            text-align: center;
         }
         
     }
