@@ -1062,6 +1062,34 @@ footer {
     height: 100vh;
 }
 
+.manali-banner {
+    height: 100vh;
+    background: url(../images/tuffman-manali-banner.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: left;
+}
+
+.masthead-black h1 {
+    color: #2e2e2e;
+}
+
+.gurugram-banner {
+    height: 100vh;
+    background: url(../images/tuffman-gurugram-banner.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: left;
+}
+
+.delhi-hm-banner {
+    height: 100vh;
+    background: url(../images/tuffman-delhi-banner.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 65%;
+}
+
 
 
 
