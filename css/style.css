@@ -260,7 +260,7 @@ nav>ul>li>a.active-page {
 /*---------------------------------------------------
  Upcoming races Section
 ----------------------------------------------------*/
-.upcoming-races {
+.upcoming-races, .past-races {
     padding-top: 40px;
     padding-bottom: 30px;
     background-image: url(../images/bg-blank.jpg);
@@ -445,6 +445,11 @@ nav>ul>li>a.active-page {
     font-family: 'Roboto Condensed';
     line-height: 1.2em;
     font-size: 1em;
+    text-decoration: none;
+}
+
+.card-wrapper a {
+    color: var(--red);
 }
 
 .card-wrapper li {
