@@ -85,21 +85,29 @@ p {
 .btn-secondary {
     display: inline-block;
     font-family: Agency;
-    font-size: 20px;
+    font-size: 1em;
     text-decoration: none;
     color: #fff;
-    background-color: var(--red);
-    padding: 15px 30px 15px;
+    background-color: var(--red-transparent);
+    padding: 10px 20px;
+    margin: 10px;
     border: none;
     text-align: center;
+    box-shadow: 0 5px 25px 0px rgba(0,0,0,0.5);
     transition: .4s;
+}
+
+
+.btn-race-info {
+    background-color: #fff;
+    color: var(--red);
 }
 
 .btn-secondary:hover,
 .btn-secondary:focus {
     background-color: #000;
+    color: #fff;
 }
-
 /*------------------------------------------*/
 
 
@@ -952,12 +960,19 @@ footer {
     line-height: 1em;
     letter-spacing: 1px;
     position: absolute;
-    bottom: 10%;
+    bottom: 20%;
 }
 
 .race-masthead h1 span {
     font-size: 0.5em;
     line-height: 1em;
+}
+
+.header-cta {
+    position: absolute;
+    bottom: 10%;
+    text-align: center;
+    width: 100%;
 }
 
 .race-brief-container {
@@ -1261,6 +1276,10 @@ footer {
         /*---------------------------------------------------
          INDIVIDUAL RACES: GLOBAL
         ----------------------------------------------------*/
+        .btn-secondary {
+            font-size: 1.2em;
+        }
+        
         .race-intro, .race-facilities, .other-info {
             max-width: none;
             margin: 10px;
@@ -1556,6 +1575,11 @@ footer {
         
         .race-masthead h1 {
             font-size: 6em;
+        }
+        
+        .btn-secondary {
+            font-size: 1.4em;
+            padding: 15px 30px;
         }
         
         /*---------------------------------------------------
