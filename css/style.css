@@ -1123,6 +1123,16 @@ footer {
     background-position: center;
 }
 
+.sponsors-partner h4 {
+    margin: 0.4em 0;
+    text-align: left;
+    font-size: 1em;
+    font-family: 'Roboto Condensed';
+}
+
+.sponsors-partner h4 span {
+    color: var(--red);
+}
 
 
 @supports (grid-area: auto) { 
@@ -1630,3 +1640,4 @@ footer {
         }
     }
 }
+
