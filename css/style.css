@@ -405,6 +405,7 @@ nav>ul>li>a.active-page {
     max-width: 600px;
     display: inline-block;
     margin: 0 auto;
+    align-self: center;
 }
 
 .about-text {
@@ -415,6 +416,7 @@ nav>ul>li>a.active-page {
 .about-text h2 {
     color: var(--red);
     text-align: center;
+    line-height: 1.2em;
 }
 
 .about-text span {
@@ -445,7 +447,8 @@ nav>ul>li>a.active-page {
     margin: 20px 10px;
 }
 
-.card-wrapper ul {
+.card-wrapper ul,
+.about-text ul {
     margin: 10px;
     padding: 10px;
     list-style-image: url(../images/arrow-right.png);
@@ -460,7 +463,8 @@ nav>ul>li>a.active-page {
     color: var(--red);
 }
 
-.card-wrapper li {
+.card-wrapper li,
+.about-text li {
     margin: 10px 0;
 }
 
@@ -1036,7 +1040,14 @@ footer {
     transform: scaleX(-1);
 }
 
-
+.route-image {
+    width: 90%;
+    height: auto;
+    max-width: 1200px;
+    display: inline-block;
+    margin: 0 auto;
+    align-self: center;
+}
 /*---------------------------------------------------
  INDIVIDUAL RACES: TRICITY TRIATHLON
 ----------------------------------------------------*/
@@ -1107,12 +1118,12 @@ footer {
     background-position: left;
 }
 
-.delhi-hm-banner {
+.shimla-banner {
     height: 100vh;
-    background: url(../images/tuffman-delhi-banner.jpg);
+    background: url(../images/tuffman-shimla-banner.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: 65%;
+    background-position: 10% 80%;
 }
 
 .tricity-stadium {
