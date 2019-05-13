@@ -342,6 +342,10 @@ nav>ul>li>a.active-page {
     background-color: rgb(255, 186, 1, 0.8);
 }
 
+.overlay-orange {
+    background-color: rgb(204, 123, 28, 0.8);
+}
+
 .overlay-aqua {
     background-color: rgba(0, 70, 58, 0.7);
 }
@@ -1054,6 +1058,7 @@ footer {
 
 .tricity {
     height: 100vh;
+/*    max-height: 1080px;*/
     background: url(../images/tuffman-tricity-banner.jpg);
     background-size: cover;
     background-repeat: no-repeat;
@@ -1063,6 +1068,7 @@ footer {
 
 .goa-banner {
     height: 100vh;
+/*    max-height: 1080px;*/
     background: url(../images/tuffman-goa-banner.jpg);
     background-size: cover;
     background-repeat: no-repeat;
@@ -1071,6 +1077,7 @@ footer {
 
 .kasauli-banner {
     height: 100vh;
+/*    max-height: 1080px;*/
     background: url(../images/tuffman-kasauli-banner.jpg);
     background-size: cover;
     background-repeat: no-repeat;
@@ -1079,6 +1086,7 @@ footer {
 
 .jaisalmer-banner {
     height: 100vh;
+/*    max-height: 1080px;*/
     background: url(../images/tuffman-jaisalmer-banner.jpg);
     background-size: cover;
     background-repeat: no-repeat;
@@ -1087,6 +1095,7 @@ footer {
 
 .andaman-banner {
     height: 100vh;
+/*    max-height: 1080px;*/
     background: url(../images/tuffman-andman-banner.jpg);
     background-size: cover;
     background-repeat: no-repeat;
@@ -1100,6 +1109,7 @@ footer {
 
 .manali-banner {
     height: 100vh;
+/*    max-height: 1080px;*/
     background: url(../images/tuffman-manali-banner.jpg);
     background-size: cover;
     background-repeat: no-repeat;
@@ -1112,6 +1122,7 @@ footer {
 
 .gurugram-banner {
     height: 100vh;
+/*    max-height: 1080px;*/
     background: url(../images/tuffman-gurugram-banner.jpg);
     background-size: cover;
     background-repeat: no-repeat;
@@ -1120,6 +1131,7 @@ footer {
 
 .shimla-banner {
     height: 100vh;
+/*    max-height: 1080px;*/
     background: url(../images/tuffman-shimla-banner.jpg);
     background-size: cover;
     background-repeat: no-repeat;
@@ -1128,10 +1140,20 @@ footer {
 
 .tricity-stadium {
     height: 100vh;
+/*    max-height: 1080px;*/
     background: url(../images/stadium-run-banner.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+}
+
+.chandigarh-banner {
+    height: 100vh;
+/*    max-height: 1080px;*/
+    background: url(../images/tuffman-chandigarh-half-marathon.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 90%;
 }
 
 .sponsors-partner h4 {
