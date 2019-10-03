@@ -1111,6 +1111,12 @@ footer {
     transform: scaleX(-1);
 }
 
+.red-spacer {
+    background-color: var(--red);
+    width: 100%;
+    height: 3px;
+}
+
 .route-image {
     width: 100%;
 }
