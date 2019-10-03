@@ -110,9 +110,55 @@ p {
 }
 /*------------------------------------------*/
 
+.modal {
+    position: fixed;
+    z-index: 10000;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.5);
+}
 
+.modal-content {
+    background-color: #f4f4f4;
+    margin: 20% auto;
+    padding: 20px;
+    width: 80%;
+    box-shadow: 0 5px 8px 0 rgba(0,0,0,0.2), 0 7px 20px 0 rgba(0,0,0,0.2);
+    text-align: left;
+    font-family: 'Roboto Condensed';
+}
 
+.modal-content h2 {
+    font-family: Agency;
+    text-align: center;
+    color: #b11016;
+}
 
+.modal-content li {
+    font-weight: 400;
+}
+
+.modal-content span,
+.modal-content a {
+    color: #b11016;
+    font-weight: 700;
+}
+
+.closeBtn {
+    color: #b11016;
+    float: right;
+    font-size: 30px;
+}
+
+.closeBtn:hover,
+.closeBtn:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
 /*---------------------------------------------------
  Navigation styles
 ----------------------------------------------------*/
@@ -353,6 +399,11 @@ nav>ul>li>a.active-page {
 .overlay-violet {
     background-color: rgba(255, 116, 231, 0.8);
 }
+
+.overlay-violet-ladakh {
+    background-color: rgba(108,90,170, 0.8);
+}
+
 
 .overlay-violet-dark {
     background-color: rgba(186, 84, 254, 0.8);
@@ -959,31 +1010,47 @@ footer {
 /*---------------------------------------------------
  INDIVIDUAL RACES: GLOBAL
 ----------------------------------------------------*/
-
-.race-masthead h1 {
+.race-masthead .race-heading {
     font-family: 'Agency';
-    margin-left: 10px;
     color: #fff;
-    font-size: 2.5em;
-    line-height: 1em;
-    letter-spacing: 1px;
     position: absolute;
     bottom: 20%;
+}
+.race-masthead h1 {
+    margin-left: 10px;    
+    font-size: 2.5em;
+    line-height: 0.9em;
+    letter-spacing: 1px;
+    margin-bottom: 0;
 }
 
 .race-masthead h1 span {
     font-size: 0.5em;
-    line-height: 1em;
+    line-height: 0.5em;
 }
+
+.race-masthead h2 {
+    margin: 0;
+    margin-left: 10px;
+    font-size: 1.2em;    
+}
+
+.race-masthead h3 {
+    margin: 0;
+    margin-left: 10px;
+    margin-top: 5px;
+    font-size: 1.8em;    
+}
+
 
 .header-cta {
     position: absolute;
-    bottom: 10%;
+    bottom: 5%;
     text-align: center;
     width: 100%;
 }
 
-.race-brief-container {
+.race-brief-container, .booking-section {
     padding-top: 40px;
     padding-bottom: 30px;
     background-image: url(../images/bg-blank.jpg);
@@ -1045,12 +1112,7 @@ footer {
 }
 
 .route-image {
-    width: 90%;
-    height: auto;
-    max-width: 1200px;
-    display: inline-block;
-    margin: 0 auto;
-    align-self: center;
+    width: 100%;
 }
 /*---------------------------------------------------
  INDIVIDUAL RACES: TRICITY TRIATHLON
@@ -1156,6 +1218,16 @@ footer {
     background-position: 90%;
 }
 
+.ladakh-banner {
+    height: 100vh;
+/*    max-height: 1080px;*/
+    background: url(../images/tuffman-ladakh-banner.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 90%;
+}
+
+
 .sponsors-partner h4 {
     margin: 0.4em 0;
     text-align: left;
@@ -1165,6 +1237,21 @@ footer {
 
 .sponsors-partner h4 span {
     color: var(--red);
+}
+
+.booking-buttons h2 {
+    font-size: 2em;
+    margin: 20px 10px;
+    color: var(--red);
+    background-color: rgba(255,255,255,0.9);
+}
+.booking-buttons img {
+    max-width: 200px;
+    transition: box-shadow 200ms ease-in-out;
+}
+
+.booking-buttons img:hover {
+    box-shadow: 0 5px 25px 0px rgba(0,0,0,0.5); 
 }
 
 
@@ -1256,13 +1343,7 @@ footer {
             margin: 0; 
         }
         
-         /*-------------------------------
-        RACES PAGE HEADER
-        -------------------------------*/
-        .races-masthead h1 {
-            font-size: 52px;
-            line-height: 45px;
-        }
+            
         
         /*-----------------------------
         RACES PAGE
@@ -1279,7 +1360,8 @@ footer {
         /*-------------------------------
         RESULTS PAGE HEADER
         -------------------------------*/
-        .results-masthead h1 {
+        .results-masthead h1,
+        .races-masthead h1 {
             font-size: 52px;
             line-height: 45px;
         }
@@ -1338,6 +1420,35 @@ footer {
             margin: 10px auto;
         }
         
+        #route-heading {
+            grid-column: 1/3;
+        }
+        
+        .route-card {
+            grid-column: 1/3;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        
+        
+        .booking-buttons {
+            display: grid;
+            grid-template-columns: 3fr 1fr 3fr;
+            align-items: center;
+        }
+        
+        .booking-buttons h2 {
+            font-size: 3em;
+            margin: 0 10px;
+        }
+        
+        .booking-buttons .book-button-1 {
+            text-align: right;
+        }
+        
+        .booking-buttons .book-button-2 {
+            text-align: left;
+        }     
         
         /*---------------------------------------------------
          INDIVIDUAL RACES: TRICITY TRIATHLON
@@ -1446,6 +1557,10 @@ footer {
 
         }
         
+        .cta-button {
+            margin-top: 0;
+            padding-bottom: 0;
+        }
         /*-------------------------------
         HEADER
         -------------------------------*/
@@ -1521,10 +1636,30 @@ footer {
         /*-----------------------------
         RACES PAGE
         ------------------------------*/
+        .modal-content {
+            width: 50%;
+            margin: 15% auto;
+        }
         
-        .races-masthead h1 {
+         .races-masthead h1 {
             font-size: 5em;
             line-height: 0.8em;
+        }
+        
+        .race-masthead h1 {
+            font-size: 5em;
+            line-height: 0.8em;
+        }
+        
+        .race-masthead h2 {
+            font-size: 1.8em;
+            line-height: 1em;
+        }
+        
+        .race-masthead h3 {
+            margin-top: 10px;
+            font-size: 3em;
+            line-height: 1em;
         }
         
         .all-races {
@@ -1622,6 +1757,16 @@ footer {
             padding: 15px 30px;
         }
         
+        #route-heading {
+            grid-column: 1/5;
+        }
+        
+        .route-card {
+            grid-column: 1/5;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
         /*---------------------------------------------------
          INDIVIDUAL RACES: TRICITY TRIATHLON
         ----------------------------------------------------*/
@@ -1671,6 +1816,36 @@ footer {
             grid-column: 4/5;
             
         }
+        
+        #ladakh-mtb-grid .card-wrapper:first-of-type {
+            grid-column: 1/3;
+        }
+        
+        
+        #ladakh-mtb-grid .card-wrapper:nth-child(3) {
+            grid-row: 1;
+            grid-column: 4/5;
+        }
+        
+        #ladakh-mtb-grid .card-wrapper:nth-child(4) {
+            grid-row: 2;
+            grid-column: 1/2;
+        }
+        
+        #ladakh-mtb-grid .card-wrapper:nth-child(5) {
+            grid-row: 2;
+            grid-column: 2/3;
+        }
+        
+        #ladakh-mtb-grid .card-wrapper:nth-child(6) {
+            grid-row: 2;
+            grid-column: 3/4;
+        }        
+               
+        .booking-buttons h2 {
+         font-size: 5em;   
+        }
+        
     }
 }
 
