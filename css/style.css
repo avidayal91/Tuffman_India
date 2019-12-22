@@ -1233,6 +1233,14 @@ footer {
     background-position: 90%;
 }
 
+.hussainiwala-banner {
+    height: 100vh;
+    background: url(../images/hussainiwala-banner.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
 
 .sponsors-partner h4 {
     margin: 0.4em 0;
@@ -1852,6 +1860,11 @@ footer {
          font-size: 5em;   
         }
         
+    }
+    @media screen and (min-width: 1600px) {
+        .race-masthead .race-heading {
+            left: 50px;
+        }
     }
 }
 
