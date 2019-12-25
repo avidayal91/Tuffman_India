@@ -59,6 +59,7 @@ p {
 .cta-button {
     text-align: center;
     margin-top: 20px;
+    margin-bottom: 20px;
     padding-bottom: 30px;
 }
 
@@ -1572,7 +1573,6 @@ footer {
         }
         
         .cta-button {
-            margin-top: 0;
             padding-bottom: 0;
         }
         /*-------------------------------
