@@ -124,6 +124,17 @@ p {
     color: #fff;
 }
 /*------------------------------------------*/
+section.urgent-notification {
+    padding: 20px 10px;
+}
+
+.urgent-notification a {
+    color: var(--red);
+    font-size: 2.5rem;
+    display: block;
+    text-align: center;
+}
+
 
 .modal {
     position: fixed;
